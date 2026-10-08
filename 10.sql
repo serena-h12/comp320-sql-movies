@@ -1,0 +1,1 @@
+select Title, genre, Runtime from movies m where cast(Runtime as integer) = (select max(cast(Runtime as integer)) from movies where genre = m.genre);

@@ -1,0 +1,1 @@
+select * from (select Title, genre, Worldwide from movies where genre = 'Sci-Fi' order by Worldwide desc limit (select floor(0.2*count(*)) from movies where genre = 'Sci-Fi')) order by title;

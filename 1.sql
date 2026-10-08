@@ -1,0 +1,1 @@
+select genre, count(*) from movies group by genre;

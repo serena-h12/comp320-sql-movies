@@ -1,0 +1,1 @@
+select title, genre, rating, metacritic from movies where (metacritic/10.0) > rating;

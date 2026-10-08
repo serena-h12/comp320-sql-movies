@@ -1,0 +1,1 @@
+select Title, genre, totalVotes from movies m where totalVotes = (select max(totalVotes) from movies where genre = m.genre);

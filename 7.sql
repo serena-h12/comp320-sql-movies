@@ -1,0 +1,1 @@
+select Title, genre, Rating from movies m where Rating = (select max(Rating) from movies where genre = m.genre);

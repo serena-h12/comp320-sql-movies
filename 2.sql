@@ -1,0 +1,1 @@
+select genre, count(*) from movies where Rating > 8 group by genre;

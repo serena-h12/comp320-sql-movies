@@ -1,0 +1,1 @@
+select Title, Genre, Worldwide from movies m where (select count(*) from movies where genre = m.genre and worldwide > m.worldwide) < (select 0.2 * count(*) from movies where genre = m.genre);

@@ -1,0 +1,1 @@
+select Title, genre, budget from movies m where budget > (select avg(budget) from movies where genre = m.genre);
